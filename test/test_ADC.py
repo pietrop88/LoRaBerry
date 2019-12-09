@@ -19,17 +19,17 @@ from loraberry import ADC
 
 class Test(unittest.TestCase):
 
-    def test_getMinValue(self):
+    def test_get_min_value(self):
         adc = ADC()
         with self.assertRaises(NotImplementedError):
-            adc.getMinValue()
+            adc.get_min_value()
 
-    def test_getMaxValue(self):
+    def test_get_max_value(self):
         adc = ADC()
         with self.assertRaises(NotImplementedError):
-            adc.getMaxValue()
+            adc.get_max_value()
 
-    def test_getValue(self):
+    def test_get_value(self):
         adc = ADC()
         with self.assertRaises(NotImplementedError):
-            adc.getValue()
+            adc.get_value()

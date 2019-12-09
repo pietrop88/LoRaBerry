@@ -15,14 +15,11 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 class ADC():
-    def __init__(self):
-        pass
-
-    def getMinValue(self):
+    def get_min_value(self):
         raise NotImplementedError
 
-    def getMaxValue(self):
+    def get_max_value(self):
         raise NotImplementedError
     
-    def getValue(self):
+    def get_value(self):
         raise NotImplementedError
