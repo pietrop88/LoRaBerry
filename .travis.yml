@@ -1,0 +1,11 @@
+dist: trusty
+language: python
+sudo: false
+python:
+  - 3.5
+addons:
+  sonarcloud:
+    organization: pietrop88-github
+script:
+- python -m pytest --cov-report xml:coverage.xml --cov=./
+- sonar-scanner
