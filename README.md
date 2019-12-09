@@ -2,7 +2,10 @@
 <img width="400" alt="LoraBerry logo" src="doc/logo/loraberry_logo.png"/>
 </p>
 <p align="center">
-<a href="https://travis-ci.org/pietrop88/loraberry" target="_blank">
+<a href="https://sonarcloud.io/dashboard?id=pietrop88_loraberry">
+    <img alt="Sonar Quality Gate" src="https://img.shields.io/sonar/quality_gate/pietrop88_loraberry?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge">
+</a>
+<a href="https://travis-ci.org/pietrop88/loraberry">
     <img alt="Travis CI Build Status" src="https://img.shields.io/travis/pietrop88/loraberry?style=for-the-badge">
 </a>
 <a href="https://github.com/pietrop88/loRaBerry/blob/master/LICENSE">
