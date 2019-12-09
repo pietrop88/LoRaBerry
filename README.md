@@ -1,6 +1,11 @@
 <p align="center">
 <img width="400" alt="LoraBerry logo" src="doc/logo/loraberry_logo.png"/>
 </p>
+<p align="center">
+<a href="https://github.com/pietrop88/loRaBerry/blob/master/LICENSE">
+  <img alt="License" src="https://img.shields.io/github/license/pietrop88/loraberry?style=for-the-badge">
+</a>
+</p>
 
 ## 
 
