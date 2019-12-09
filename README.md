@@ -8,6 +8,7 @@
 <a href="https://github.com/pietrop88/loRaBerry/blob/master/LICENSE">
   <img alt="License" src="https://img.shields.io/github/license/pietrop88/loraberry?style=for-the-badge">
 </a>
+<img alt="Top language" src="https://img.shields.io/github/languages/top/pietrop88/loraberry?style=for-the-badge">
 </p>
 
 ## 
