@@ -8,7 +8,7 @@
 <a href="https://travis-ci.org/pietrop88/loraberry">
     <img alt="Travis CI Build Status" src="https://img.shields.io/travis/pietrop88/loraberry?style=for-the-badge">
 </a>
-<a href="https://sonarcloud.io/component_measures?id=pietrop88_loraberry&metric=coverage&view=list" target="_blank">
+<a href="https://sonarcloud.io/component_measures?id=pietrop88_loraberry&metric=coverage&view=list">
   <img alt="Sonar Coverage Status" src="https://img.shields.io/sonar/coverage/pietrop88_loraberry?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge">
 </a>
 <a href="https://github.com/pietrop88/loRaBerry/blob/master/LICENSE">
