@@ -86,8 +86,7 @@ class MockMCP3008(MockSPIDevice):
             if len(self.rx_buf) == self.channel_bits:
                 self.on_result(self.state == 'diff', self.rx_word())
                 self.state = 'result'
-        elif self.state == 'result':
-            if not self.tx_buf:
+        elif self.state == 'result' and not self.tx_buf:
                 self.state = 'idle'
                 self.rx_buf = []
 
