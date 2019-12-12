@@ -18,7 +18,7 @@ import unittest
 from gpiozero import Device
 from gpiozero.pins.mock import MockFactory, MockSPIDevice
 from mock import patch
-from loraberry import ADC_MCP3008
+from loraberry import MCP3008
 
 DEFAULT_CHANNEL = 0
 ADC_MIN_VALUE = 0
@@ -37,17 +37,17 @@ class Test(unittest.TestCase):
         Device.pin_factory = self._save_factory
 
     def test_get_min_value(self):
-      adc = ADC_MCP3008(channel=DEFAULT_CHANNEL)
+      adc = MCP3008(channel=DEFAULT_CHANNEL)
       self.assertEqual(adc.get_min_value(), ADC_MIN_VALUE)
         
     def test_get_max_value(self):
-      adc = ADC_MCP3008(channel=DEFAULT_CHANNEL)
+      adc = MCP3008(channel=DEFAULT_CHANNEL)
       self.assertEqual(adc.get_max_value(), ADC_MAX_VALUE)
 
     def test_get_value(self):
         with patch('gpiozero.pins.local.SpiDev', None):
             mock = MockMCP3008(11, 10, 9, 8)
-            adc = ADC_MCP3008(channel=DEFAULT_CHANNEL)
+            adc = MCP3008(channel=DEFAULT_CHANNEL)
             scale = 2 ** ADC_BITS
             tolerance = 1 / scale * ADC_MAX_VALUE
             
@@ -81,8 +81,6 @@ class MockMCP3008(MockSPIDevice):
         elif self.state == 'mode':
             if self.rx_buf[-1]:
                 self.state = 'single'
-            else:
-                self.state = 'diff'
             self.rx_buf = []
         elif self.state in ('single', 'diff'):
             if len(self.rx_buf) == self.channel_bits:
@@ -92,8 +90,6 @@ class MockMCP3008(MockSPIDevice):
             if not self.tx_buf:
                 self.state = 'idle'
                 self.rx_buf = []
-        else:
-            assert False
 
     def on_result(self, differential, channel):
         result = self._clamp(self.channels[channel], 0, self.vref)

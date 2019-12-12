@@ -20,7 +20,7 @@ from gpiozero import MCP3008
 MIN_VALUE = 0
 MAX_VALUE = 255
 
-class ADC_MCP3008(ADC, MCP3008):
+class MCP3008(ADC, MCP3008):
     def __init__(self, channel = 0):
       super().__init__(channel = channel)
 

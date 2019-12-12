@@ -15,4 +15,4 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from .ADC import ADC
-from .ADC_MCP3008 import ADC_MCP3008
+from .MCP3008 import MCP3008
