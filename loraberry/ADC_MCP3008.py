@@ -14,5 +14,21 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from .ADC import ADC
-from .ADC_MCP3008 import ADC_MCP3008
+from loraberry import ADC
+from gpiozero import MCP3008
+
+MIN_VALUE = 0
+MAX_VALUE = 255
+
+class ADC_MCP3008(ADC, MCP3008):
+    def __init__(self, channel = 0):
+      super().__init__(channel = channel)
+
+    def get_min_value(self):
+        return MIN_VALUE
+
+    def get_max_value(self):
+        return MAX_VALUE
+    
+    def get_value(self):
+        return super().value * MAX_VALUE
