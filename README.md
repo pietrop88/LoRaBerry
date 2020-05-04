@@ -11,7 +11,7 @@ This project tests the python language with the raspberry gpio mock, travis-ci a
   <img alt="Sonar Coverage Status" src="https://img.shields.io/sonar/coverage/pietrop88_loraberry?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge">
 </a>
 <a href="https://github.com/pietrop88/loRaBerry/blob/master/LICENSE">
-  <img alt="License" src="    https://img.shields.io/github/license/pietrop88/test_python_ci_raspberry?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/github/license/pietrop88/test_python_ci_raspberry?style=for-the-badge">
 </a>
 <img alt="Top language" src="https://img.shields.io/github/languages/top/pietrop88/loraberry?style=for-the-badge">
 </p>
